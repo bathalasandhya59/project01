@@ -1,0 +1,38 @@
+label {
+    display: block;
+}
+
+input {
+    display: inline-block;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+select[name=city],
+input[type=submit] {
+    width: 50vw;
+    /viewport width/ height: 5vh;
+    /viewport height/
+}
+
+body {
+    /* background:linear-gradient(red, green, yellow, blue); */
+    background: radial-gradient(green, yellow, red);
+    /* background: conical-gradient(green, yellow, red) */
+}
+
+.forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=submit] {
+    display: block;
+}
