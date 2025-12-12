@@ -1,0 +1,713 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.b {
+    padding: 10px;
+    margin: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px
+}
+
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Banner {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    opacity: 0.6;
+    top: 100px;
+    left: 100px;
+    padding: 1rem 1rem;
+    background-color: #444;
+    border-left: 3px solid !important;
+    border-color: #c62828 !important;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* .a {
+    background-color: rgb(241, 239, 239);
+    padding: 40px;
+} */
+
+.department-section {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+}
+
+.department-box {
+    display: inline-block;
+    background-color: #c62828;
+    color: #fff;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.welcome-title {
+    color: #0e3b66;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 10px;
+    border-bottom: 4 px solid #0e3b66;
+    padding-bottom: 5px;
+}
+
+.welcome-text {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.hod-name {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #0e3b66;
+    font-weight: 700;
+}
+
+@media(max-width:600px) {
+    .welcome-title {
+        font-size: 22px;
+    }
+    .welcome-text {
+        font-size: 16px;
+    }
+    .department-box {
+        font-size: 18px;
+    }
+}
+
+.department-box1 {
+    justify-content: center;
+    display: inline-block;
+    background-color: #d81919;
+    color: #fff;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.local {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.lab-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+* wrapper so the right-side "I SEM" label doesn't overlap */
+ .table-wrapper {
+    position: relative;
+    padding-right: 48px;
+    /* space for vertical label */
+    overflow-x: auto;
+    /* responsive scroll on small screens */
+    margin: 1.5rem 0;
+}
+
+
+/* vertical semester text on the right */
+
+.semester-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 48px;
+    background: #f5f5f5;
+    border-left: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    /* vertical text */
+    text-orientation: mixed;
+}
+
+
+/* table styling */
+
+.scheme-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: #fff;
+}
+
+.scheme-table th,
+.scheme-table td {
+    border: 1px solid #000;
+    padding: 6px 8px;
+}
+
+.scheme-table thead th {
+    text-align: center;
+    background: #f0f0f0;
+    font-weight: 600;
+}
+
+
+/* left-align subject name, center other columns */
+
+.scheme-table tbody td:nth-child(2) {
+    text-align: left;
+}
+
+.scheme-table th,
+.scheme-table td:not(:nth-child(2)) {
+    text-align: center;
+}
+
+
+/* rows like "Labs", "Mandatory Course" */
+
+.label-row td {
+    background: #faf0d4;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* total row */
+
+table {
+    border-collapse: collapse;
+}
+
+.total-row td {
+    background: #e6f2ff;
+}
+
+
+/* small screens */
+
+@media (max-width: 768px) {
+    .scheme-table {
+        font-size: 12px;
+    }
+    .semester-label {
+        width: 38px;
+        font-size: 12px;
+    }
+}
+
+.placemets {
+    max-width: 900PX;
+    display: flex;
+    align-items: flex-start;
+    background: #f4f4f4;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.content2 {
+    width: 100%;
+}
+
+.text {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.place {
+    color: #0e3b66;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.place1 {
+    color: rgb(255, 0, 128);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Container */
+
+.department-section1 {
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+
+/* Title */
+
+.department-title-box {
+    text-align: center;
+}
+
+.department-title-box h2 {
+    display: inline-block;
+    background: #c62828;
+    /* red box */
+    color: #fff;
+    padding: 8px 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.department-underline {
+    width: 60px;
+    height: 3px;
+    background: #1f3c88;
+    /* small blue line under title */
+    margin: 8px auto 25px;
+}
+
+
+/* Accordion wrapper */
+
+.dept-accordion {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+
+/* Each item */
+
+.dept-item {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Remove default triangle and style summary row */
+
+.dept-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 10px 18px;
+    font-size: 15px;
+    color: #444;
+    position: relative;
+    background: #f8f8f8;
+}
+
+
+/* Arrow on right side */
+
+.dept-item summary::after {
+    content: "\25BC";
+    /* ▼ */
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+
+/* Open state */
+
+.dept-item[open] summary {
+    background: #e3f2fd;
+    /* light blue highlight */
+}
+
+.dept-item[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+    /* arrow up */
+}
+
+
+/* Panel inside each item */
+
+.dept-panel {
+    margin: 0 18px 15px;
+    border-left: 3px solid #c62828;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #ddd;
+}
+
+
+/* Rows (links to PDFs etc.) */
+
+.dept-row {
+    display: block;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.dept-row:last-child {
+    border-bottom: none;
+}
+
+.dept-row:hover {
+    background: #f5f5f5;
+}
+
+
+/* Section Heading */
+
+.achievements-section {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.title-box h2 {
+    background: #c62828;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 25px;
+    font-size: 18px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 3px;
+    background: #1f3c88;
+    margin: 8px auto 25px;
+}
+
+
+/* Horizontal Scroll Container */
+
+.achievements-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.achievements-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+
+/* Cards */
+
+.ach-card {
+    min-width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.ach-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.ach-title {
+    background: #c62828;
+    color: #fff;
+    padding: 8px;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* Arrow Buttons */
+
+.scroll-buttons {
+    margin-top: 10px;
+}
+
+.scroll-buttons button {
+    padding: 10px 18px;
+    background: #c62828;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.scroll-buttons button:hover {
+    background: #8e1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background: #2d2d2d;
+    color: white;
+}
+
+
+/* ACCREDITATIONS */
+
+.accreditations {
+    text-align: center;
+    padding: 30px 0;
+    background: #f3f3f3;
+    color: #222;
+}
+
+.accreditations h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.accreditation-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.accreditation-logos img {
+    height: 60px;
+}
+
+
+/* MAIN FOOTER CONTENT */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    width: 25%;
+}
+
+.college-logo {
+    width: 180px;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.desc {
+    margin-top: 10px;
+    line-height: 20px;
+    color: #cfcfcf;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer-column a {
+    display: block;
+    color: #ddd;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+
+/* Dropdown Parent */
+
+.dropdown {
+    position: relative;
+}
+
+
+/* Dropdown Menu Hidden */
+
+.dropdown-menu {
+    line-height: 0.1px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    min-width: 100px;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2f2f2;
+}
+
+
+/* Show on hover */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN SECTION
+   =========================== */
+
+
+/* Tablet View (768px and below) */
+
+@media (max-width: 768px) {
+    /* Your tablet styles here */
+}
+
+
+/* Mobile View (480px and below) */
+
+@media (max-width: 480px) {
+    /* Your mobile styles here */
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .Banner img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .content {
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .department-section {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .local {
+        flex-direction: column;
+    }
+    .local img {
+        width: 100%;
+        height: auto;
+    }
+    table {
+        font-size: 10px;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu ul li {
+        margin: 10px;
+    }
+    .Banner img {
+        height: 400px;
+    }
+    .content {
+        top: 50px;
+        left: 50px;
+    }
+    .local {
+        display: flex;
+        flex-direction: column;
+    }
+    .ach-card {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .department-section {
+        max-width: 1100px;
+    }
+}

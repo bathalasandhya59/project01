@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px
+}
+
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Dropdown Parent */
+
+.dropdown {
+    position: relative;
+}
+
+
+/* Dropdown Menu Hidden */
+
+.dropdown-menu {
+    line-height: 0.1px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    min-width: 100px;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2f2f2;
+}
+
+
+/* Show on hover */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.banner {
+    position: relative;
+}
+
+.content {
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    border: 2px solid rgb(100, 100, 173);
+    background-color: rgb(162, 162, 228);
+    border-left: 5px solid red;
+    padding: 10px;
+}
+
+#carouselExampleIndicators {
+    justify-content: center;
+    padding: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    font-size: 17px;
+    max-width: 700;
+}
+
+.main {
+    display: flex;
+}
+
+.text {
+    padding: 20px;
+    margin: 20px;
+}
+
+.indu {
+    background-color: rgb(241, 235, 235);
+    padding: 20px;
+}
+
+.industry {
+    padding: 20px;
+}
+
+.p {
+    font-size: 12px;
+}
+
+.lab {
+    border: 2px solid black;
+}
+
+.side {
+    display: flex;
+    margin: 20px;
+}
+
+.degree-text {
+    color: rgb(58, 58, 109);
+    height: 100px;
+    margin-top: 130px;
+}
+
+.first {
+    display: flex;
+    margin: 20px;
+    background-color: rgb(230, 224, 224);
+}
+
+.first-text {
+    color: rgb(108, 108, 160);
+}
+
+.real {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ACCREDITATIONS */
+
+.accreditations {
+    text-align: center;
+    padding: 30px 0;
+    background: #f3f3f3;
+    color: #222;
+}
+
+.accreditations h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.accreditation-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.accreditation-logos img {
+    height: 60px;
+}
+
+
+/* MAIN FOOTER CONTENT */
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    width: 25%;
+}
+
+.college-logo {
+    width: 180px;
+}
+
+.social-icons {
+    margin: 15px 0;
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.desc {
+    margin-top: 10px;
+    line-height: 20px;
+    color: #cfcfcf;
+}
+
+
+/* FOOTER COLUMNS */
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer-column a {
+    display: block;
+    color: #ddd;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+
+/* Dropdown Parent */
+
+.dropdown {
+    position: relative;
+}
+
+
+/* Dropdown Menu Hidden */
+
+.dropdown-menu {
+    line-height: 0.1px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    min-width: 100px;
+    min-height: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+
+/* Dropdown links */
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #444;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2f2f2;
+}
+
+
+/* Show on hover */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN SECTION
+   =========================== */
+
+
+/* Tablet View (768px and below) */
+
+@media (max-width: 768px) {
+    /* Your tablet styles here */
+}
+
+
+/* Mobile View (480px and below) */
+
+@media (max-width: 480px) {
+    /* Your mobile styles here */
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .Banner img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .content {
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .department-section {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .local {
+        flex-direction: column;
+    }
+    .local img {
+        width: 100%;
+        height: auto;
+    }
+    table {
+        font-size: 10px;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu ul li {
+        margin: 10px;
+    }
+    .Banner img {
+        height: 400px;
+    }
+    .content {
+        top: 50px;
+        left: 50px;
+    }
+    .local {
+        display: flex;
+        flex-direction: column;
+    }
+    .ach-card {
+        width: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .department-section {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        top: 40px;
+        left: 30px;
+        font-size: 20px;
+    }
+    .img {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .side {
+        flex-direction: column;
+        text-align: center;
+    }
+    .degree-text {
+        margin-top: 20px;
+        height: auto;
+    }
+    .real {
+        grid-template-columns: 1fr;
+    }
+    .first {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-left,
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        top: 20px;
+        left: 15px;
+        font-size: 16px;
+        padding: 8px;
+    }
+    .img {
+        padding: 10px;
+    }
+    .text {
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .degree-text {
+        font-size: 14px;
+    }
+    .first {
+        margin: 10px;
+        padding: 10px;
+    }
+    .first img {
+        width: 100%;
+        height: auto;
+    }
+    .accreditation-logos {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-content {
+        padding: 20px;
+    }
+    .college-logo {
+        width: 140px;
+    }
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+}
